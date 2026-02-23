@@ -346,8 +346,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 20px;
     padding: 20px;
     transition: transform 0.3s ease;
 }
@@ -356,28 +354,13 @@ body {
     transform: scale(1.1);
 }
 
-/* Different gradient colors for each skill card */
-.skill-card:nth-child(1) .skill-icon-container {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
 
-.skill-card:nth-child(2) .skill-icon-container {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.skill-card:nth-child(3) .skill-icon-container {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.skill-card:nth-child(4) .skill-icon-container {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-}
 
 .skill-icon {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: brightness(0) invert(1);
+    
 }
 
 .skill-title {
