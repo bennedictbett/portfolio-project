@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About & Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h1 class="about-title">About</h1>
+        
+        <div class="profile-image-container">
+            <div class="profile-image">
+                <img src="images/about/1.jpg" alt="Profile Picture" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'profile-placeholder\'><div class=\'profile-placeholder-head\'></div><div class=\'profile-placeholder-body\'></div></div>'">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <p class="about-text">
+                Welcome! I'm an aspiring Data Scientist with a strong passion for extracting meaningful insights from data 
+                and building intelligent systems. My interests span across Data Science, Data Analysis, and Machine Learning, 
+                where I focus on understanding patterns, solving complex problems, and creating data-driven solutions. I'm 
+                currently seeking internship opportunities to apply my knowledge in real-world scenarios and contribute to 
+                impactful projects. My journey into the data field began with a fascination for how data shapes decision-making, 
+                and I'm committed to continuously expanding my skills in statistical analysis, predictive modeling, and emerging 
+                technologies in the AI and ML landscape.
+            </p>
+            
+            <p class="about-text">
+                Beyond technical skills, I believe in the power of data to drive innovation and solve real-world challenges. 
+                I'm actively developing my expertise through hands-on projects, online courses, and staying current with industry 
+                trends and best practices. I'm particularly interested in exploring how machine learning can be applied to create 
+                practical solutions across various domains. I approach every learning opportunity with curiosity and dedication, 
+                eager to collaborate with experienced professionals and contribute fresh perspectives to data-driven initiatives. 
+                I'm excited about the prospect of joining a dynamic team where I can grow, learn, and make meaningful contributions 
+                to the field of data science.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h1 class="projects-title">Projects</h1>
+        
+        <div class="container-fluid px-0">
+            <div class="row g-4">
+                <!-- Project 1 -->
+   
+<div class="col-lg-4 col-md-6">
+    <div class="card project-card">
+        <div class="project-image-container">
+            <div class="sun-decoration"></div>
+            <div class="wave-overlay"></div>
+            <img src="images/safROC_Curve.png" alt="Safaricom Churn Intelligence" 
+     onload="this.parentElement.querySelector('.wave-overlay').style.display='none'; this.parentElement.querySelector('.sun-decoration').style.display='none';"
+     onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+            <h3 class="project-title">Safaricom Churn Intelligence</h3>
+            <p class="project-description">
+                ML-powered customer churn prediction for Kenya's telco market. Built a Random Forest 
+                model achieving 84.2% ROC-AUC, incorporating Kenya-specific features like M-Pesa usage, 
+                Bonga loyalty points, and county-level demographics to identify at-risk customers.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/bennedictbett/Safaricom-churn-intelligence#readme" target="_blank" class="project-link blog-link">Blog Post</a>
+                <a href="https://github.com/bennedictbett/Safaricom-churn-intelligence" target="_blank" class="project-link source-link">Source Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card">
+                        <div class="project-image-container">
+                            <div class="sun-decoration"></div>
+                            <div class="wave-overlay"></div>
+                            <img src="images/projects/2.jpg" alt="Project 2" onerror="this.style.display='none'">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">ML Prediction Model</h3>
+                            <p class="project-description">
+                                A machine learning model built with scikit-learn for predictive analytics. 
+                                Implemented feature engineering, model selection, and hyperparameter tuning to 
+                                achieve optimal performance with cross-validation and evaluation metrics.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link blog-link">Blog Post</a>
+                                <a href="#" class="project-link source-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card">
+                        <div class="project-image-container">
+                            <div class="sun-decoration"></div>
+                            <div class="wave-overlay"></div>
+                            <img src="images/projects/3.jpg" alt="Project 3" onerror="this.style.display='none'">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="project-title">Customer Segmentation Analysis</h3>
+                            <p class="project-description">
+                                Applied clustering algorithms to segment customers based on purchasing behavior. 
+                                Utilized K-means and hierarchical clustering techniques to identify distinct customer 
+                                groups, enabling targeted marketing strategies and business insights.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link blog-link">Blog Post</a>
+                                <a href="#" class="project-link source-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h1 class="skills-title">Skills</h1>
+        
+        <div class="container-fluid px-0">
+            <div class="row g-4 justify-content-center">
+                <!-- Skill 1: Python & Machine Learning -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="skill-card">
+                        <div class="skill-icon-container">
+                            <img src="images/skills/1.png" alt="Python & Machine Learning" class="skill-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%233776ab%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%23ffd43b%22%3EPy%3C/text%3E%3C/svg%3E'">
+                        </div>
+                        <h3 class="skill-title">Python & Machine Learning</h3>
+                        <p class="skill-description">
+                            Proficient in Python programming with hands-on experience in machine learning 
+                            algorithms, model building, and data manipulation using libraries like scikit-learn, 
+                            TensorFlow, and Pandas.
+                        </p>
+                        <a href="https://coursera.org/share/153a92ebdc9844e08f1394fa17f649de" target="_blank" class="skill-link">View Certification</a>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Data Visualization -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="skill-card">
+                        <div class="skill-icon-container">
+                            <img src="images/skills/2.png" alt="Data Visualization" class="skill-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23f4f4f4%22 width=%22100%22 height=%22100%22/%3E%3Crect x=%2220%22 y=%2260%22 width=%2215%22 height=%2230%22 fill=%22%23ff6b6b%22/%3E%3Crect x=%2242%22 y=%2240%22 width=%2215%22 height=%2250%22 fill=%22%234ecdc4%22/%3E%3Crect x=%2264%22 y=%2225%22 width=%2215%22 height=%2265%22 fill=%22%2395e1d3%22/%3E%3C/svg%3E'">
+                        </div>
+                        <h3 class="skill-title">Data Visualization</h3>
+                        <p class="skill-description">
+                            Skilled in creating impactful visual representations of data using tools like 
+                            Matplotlib, Seaborn, Plotly, and Tableau to communicate insights effectively 
+                            and support data-driven decisions.
+                        </p>
+                        <a href="#" class="skill-link">View Projects</a>
+                    </div>
+                </div>
+
+                <!-- Skill 3: SQL & Databases -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="skill-card">
+                        <div class="skill-icon-container">
+                            <img src="images/skills/3.png" alt="SQL & Databases" class="skill-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23336791%22 width=%22100%22 height=%22100%22/%3E%3Cellipse cx=%2250%22 cy=%2230%22 rx=%2230%22 ry=%2210%22 fill=%22%2300758f%22/%3E%3Crect x=%2220%22 y=%2230%22 width=%2260%22 height=%2240%22 fill=%22%2300758f%22/%3E%3Cellipse cx=%2250%22 cy=%2270%22 rx=%2230%22 ry=%2210%22 fill=%22%23336791%22/%3E%3C/svg%3E'">
+                        </div>
+                        <h3 class="skill-title">SQL & Databases</h3>
+                        <p class="skill-description">
+                            Experienced in writing complex SQL queries, database design, and data extraction 
+                            from relational databases. Certified in SQL with practical experience in data 
+                            manipulation and analysis.
+                        </p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/072a772d4e661702aed095ad8c1c82c78bc27667?raw=1" class="skill-link">View Certification</a>
+                    </div>
+                </div>
+
+                <!-- Skill 4: Data Storytelling -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="skill-card">
+                        <div class="skill-icon-container">
+                            <img src="images/skills/4.png" alt="Data Storytelling" class="skill-icon" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23f7f7f7%22 width=%22100%22 height=%22100%22/%3E%3Crect x=%2225%22 y=%2220%22 width=%2250%22 height=%2260%22 fill=%22%23fff%22 stroke=%22%23333%22 stroke-width=%222%22/%3E%3Cline x1=%2235%22 y1=%2235%22 x2=%2265%22 y2=%2235%22 stroke=%22%23666%22 stroke-width=%222%22/%3E%3Cline x1=%2235%22 y1=%2245%22 x2=%2265%22 y2=%2245%22 stroke=%22%23666%22 stroke-width=%222%22/%3E%3Cline x1=%2235%22 y1=%2255%22 x2=%2255%22 y2=%2255%22 stroke=%22%23666%22 stroke-width=%222%22/%3E%3C/svg%3E'">
+                        </div>
+                        <h3 class="skill-title">Data Storytelling</h3>
+                        <p class="skill-description">
+                            Ability to translate complex data insights into compelling narratives that 
+                            resonate with stakeholders. Experienced in presenting findings through clear 
+                            visualizations and actionable recommendations.
+                        </p>
+                        <a href="#" class="skill-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">Contact Me</h2>
+            
+            <!-- Contact Information -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 mb-4 mb-md-0">
+                    <div class="contact-info-item">
+                        <div class="contact-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="contact-icon" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info-text">
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:benedictbett08@gmail.com" class="contact-link">benedictbett08@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="contact-info-item">
+                        <div class="contact-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="contact-icon" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info-text">
+                            <p class="contact-label">Phone</p>
+                            <a href="tel:+254718647283" class="contact-link">+254 718 647 283</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Media Icons -->
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="social-icons-container">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/benedict-bett-a9899038a/" target="_blank" class="social-icon-link" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                            <div class="social-icon-circle">
+                                <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 fill=%22white%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z%22/%3E%3C/svg%3E'">
+                            </div>
+                        </a>
+                        
+                        <!-- GitHub -->
+                        <a href="https://github.com/bennedictbett" target="_blank" class="social-icon-link" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                            <div class="social-icon-circle">
+                                <img src="icons/github.png" alt="GitHub" class="social-icon-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 fill=%22white%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z%22/%3E%3C/svg%3E'">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Initialize Bootstrap Tooltips -->
+    <script>
+        // Initialize all tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                
+                if (targetId === '#home') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - navbarHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Update active nav link on scroll
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - navbarHeight - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // If at the top of the page, activate Home
+            if (window.pageYOffset < 100) {
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#home') {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
