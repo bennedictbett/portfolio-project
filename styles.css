@@ -489,6 +489,17 @@ body {
         padding: 30px 20px;
     }
 }
+@media (max-width: 768px) {
+    .project-image-container {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .project-image-container img {
+        height: auto;
+        object-fit: contain;
+    }
+}
 
 /* Contact Me Section Styles */
 .contact-section {
