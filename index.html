@@ -103,28 +103,30 @@
 </div>
 
                 <!-- Project 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card project-card">
-                        <div class="project-image-container">
-                            <div class="sun-decoration"></div>
-                            <div class="wave-overlay"></div>
-                            <img src="images/projects/2.jpg" alt="Project 2" onerror="this.style.display='none'">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="project-title">ML Prediction Model</h3>
-                            <p class="project-description">
-                                A machine learning model built with scikit-learn for predictive analytics. 
-                                Implemented feature engineering, model selection, and hyperparameter tuning to 
-                                achieve optimal performance with cross-validation and evaluation metrics.
-                            </p>
-                            <div class="project-links">
-                                <a href="#" class="project-link blog-link">Blog Post</a>
-                                <a href="#" class="project-link source-link">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+<div class="col-lg-4 col-md-6">
+    <div class="card project-card">
+        <div class="project-image-container">
+            <div class="sun-decoration"></div>
+            <div class="wave-overlay"></div>
+            <img src="images/projects/2.jpg" alt="Credit Intelligence" 
+                 onload="this.parentElement.querySelector('.wave-overlay').style.display='none'; this.parentElement.querySelector('.sun-decoration').style.display='none';"
+                 onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+            <h3 class="project-title">Credit Intelligence</h3>
+            <p class="project-description">
+                An end-to-end credit risk scoring system using LightGBM to predict loan default 
+                probability. Features a live Streamlit app with SHAP explainability, risk band 
+                classification, and loan recommendations. Trained on 307,511 samples achieving 
+                ROC-AUC of 0.75.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/bennedictbett/credit-intelligence#readme" target="_blank" class="project-link blog-link">Blog Post</a>
+                <a href="https://credit-intelligence-53xbnpkgxumwu3w7jycx85.streamlit.app/" target="_blank" class="project-link source-link">Live App</a>
+            </div>
+        </div>
+    </div>
+</div>
                 <!-- Project 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card project-card">
